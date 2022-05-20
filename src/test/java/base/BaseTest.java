@@ -12,7 +12,7 @@ abstract public class BaseTest {
     public void setUp() {
         WebDriverManager.chromedriver().setup(); //Устанавливаем сетап, можем поставить gechko
         Configuration.browser = "chrome"; //браузер, который будем использовать
-        Configuration.driverManagerEnabled = true; //У нас присутствует
+        Configuration.driverManagerEnabled = false; //У нас присутствует
         Configuration.browserSize = "1920x1080"; //Размер окна
         Configuration.headless = false; //будем ли мы видеть браузер в мометн выполнения, создает виртуальный экран и выполняет логику.
     }
